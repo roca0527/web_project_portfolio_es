@@ -13,5 +13,6 @@ En el futuro me gustaría:
 - Agregar una sección interactiva donde los usuarios puedan dejar sus propias reseñas de café.
 - un espacio para imagenes de los clientes en el café.
 
-creado por Ricardo Piña
-link github: https://github.com/roca0527
+Creado por: Ricardo Piña
+
+github:https://github.com/roca0527

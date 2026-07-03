@@ -1,0 +1,353 @@
+.logo {
+  position: relative;
+  width: 105px;
+  height: 39px;
+  margin: 30px 30px;
+}
+.header-title {
+  margin: 0;
+  max-width: 700px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+}
+
+.span-accent {
+  display: block;
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+  color: #ff976b;
+}
+.header-description {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 24px 0 0 0;
+  max-width: 560px;
+}
+body {
+  min-width: 1100px;
+  max-width: 2000px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+}
+
+.header {
+  background-color: #ffffff;
+  background-image: url(../images/background_header.svg);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 40px 60px 48px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.header-text {
+  max-width: 560px;
+}
+.header-image {
+  width: min(520px, 100%);
+  height: auto;
+  margin: 0;
+}
+.header-hours {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+  margin-top: 32px;
+}
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.info-text {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6f6f6f;
+  margin: 0;
+}
+#contactos {
+  text-decoration: none;
+  color: #6f6f6f;
+  font-weight: bold;
+}
+
+#reservar_mesa {
+  text-decoration: none;
+  color: #6f6f6f;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 500;
+}
+.nav-links a {
+  color: #1f1f1f;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #ff976b;
+}
+
+a:visited {
+  color: #6f6f6f;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 120px;
+  background-color: #ffd6c5;
+}
+
+.reservation {
+  background-image: url(../images/background_reservation.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  max-width: 700px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 58px 48px 48px;
+  border-radius: 32px;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.reservation-button {
+  background-color: #e96e3a;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 14px;
+  width: 100%;
+  padding: 16px 20px;
+  color: #ffffff;
+  text-transform: none;
+  border: none;
+  cursor: pointer;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.reservation-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.reservation-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  margin: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.reservation-input {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  min-height: 56px;
+  margin: 0;
+  padding: 16px 18px;
+  border: 1px solid #838383;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.88);
+  color: #2c2c2c;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.reservation-input:focus {
+  outline: none;
+  border-color: #e96e3a;
+  box-shadow: 0 0 0 4px rgba(182, 123, 100, 0.14);
+}
+
+.reservation-label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2c2c2c;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.reservation-checkbox {
+  width: auto;
+  margin-right: 12px;
+}
+
+.reservation-label:last-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: #d35722;
+  color: #f2f2f2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  column-gap: 48px;
+  row-gap: 24px;
+  align-items: start;
+  padding: 60px 60px 40px;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+  border-radius: 0 0 24px 24px;
+  overflow: hidden;
+}
+
+.footer > * {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-content {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: right;
+}
+.footer-social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+.footer-logo {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+}
+.footer-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+.footer-copy {
+  grid-column: 1;
+  grid-row: 3;
+  align-self: end;
+}
+.social-media-link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0;
+  text-decoration: none;
+  color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.circulo {
+  position: absolute;
+  top: -128px;
+  left: 30px;
+  width: 340px;
+  height: 340px;
+  background-color: #e96e3a;
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.reservation-button:hover {
+  opacity: 0.7;
+}
+
+.social-media-link:hover {
+  color: #ff976b;
+  transition: color 0.3s ease;
+}
+.nav-links:hover {
+  color: #ff976b;
+  transition: color 0.3s ease;
+}
