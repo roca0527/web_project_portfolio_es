@@ -1,80 +1,26 @@
-:root {
-  --primary: #e96e3a;
-  --accent: #ff976b;
-  --ink: #1f1f1f;
-  --muted: #6f6f6f;
-  --surface: #fff7f2;
-  --shadow: 0 18px 38px rgba(0, 0, 0, 0.08);
-}
-
-* {
-  box-sizing: border-box;
+﻿:root {
+  --primary: #6d6dff;
+  --accent: #00ff7b;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --surface: #f4f7fb;
+  --shadow: 0 18px 45px rgba(15, 23, 42, 0.16);
 }
 
 body {
   margin: 0;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   background: var(--surface);
   color: var(--ink);
 }
 
-.header {
-  box-shadow: inset 0 -1px 0 rgba(31, 31, 31, 0.06);
+img {
+  display: block;
+  max-width: 100%;
 }
 
-.nav-links a {
-  padding: 0.45rem 0.7rem;
-  border-radius: 999px;
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease;
-}
-
+.button:hover,
+.project-card:hover,
 .nav-links a:hover {
-  background-color: rgba(255, 151, 107, 0.15);
-  color: var(--primary);
-}
-
-.content {
-  background: linear-gradient(180deg, #ffe7db 0%, #ffd6c5 100%);
-}
-
-.reservation {
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(2px);
-}
-
-.reservation-button {
-  box-shadow: 0 12px 26px rgba(233, 110, 58, 0.2);
-}
-
-.reservation-button:hover {
-  opacity: 0.95;
-  transform: translateY(-2px);
-}
-
-.reservation-input {
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
-}
-
-.reservation-input:focus {
-  transform: translateY(-1px);
-}
-
-.footer {
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
-}
-
-.social-media-link {
-  transition:
-    color 0.2s ease,
-    transform 0.2s ease;
-}
-
-.social-media-link:hover {
-  color: #ffd8c7;
-  transform: translateX(2px);
+  transition: all 0.2s ease;
 }

@@ -1,17 +1,13 @@
-# Triple Espresso
+﻿# Portafolio personal
 
-## Descripción del proyecto
+Este proyecto presenta una versión adaptada de un portafolio personal con un diseño pensado para escritorio, tablet y móvil.
 
-**Triple Espresso** es una página web diseñada para poder agendar una mesa en la cafeteria de triple peaks, tambien contiene informacion como la ubicacion y sus horarios.
+## Vista previa
 
-El proyecto fue desarrollado utilizando **HTML** y **CSS**, aplicando técnicas como **Flexbox** para lograr un diseño responsive y ordenado.
+- GitHub Pages: https://roca0527.github.io/web_project_portfolio_es/
 
-## Planes de mejora
+## Características
 
-En el futuro me gustaría:
-
-- Agregar una sección interactiva donde los usuarios puedan dejar sus propias reseñas de café.
-- un espacio para imagenes de los clientes en el café.
-
-creado por Ricardo Piña
-link github: https://github.com/roca0527
+- Diseño responsive con puntos de ruptura en 1023px y 767px.
+- Tipografías locales Open Sans y Archivo Black.
+- Secciones de perfil, proyectos y contacto.

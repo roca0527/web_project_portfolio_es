@@ -1,177 +1,126 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
   <head>
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/index.css" />
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Triple espresso</title>
+    <title>Portafolio | Luis Rojas</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
 
   <body>
-    <header class="header">
-      <div class="header-top">
-        <img class="logo" src="images/logo_coffeeshop_dark.svg" alt="logo" />
-
-        <nav class="nav">
+    <header class="hero">
+      <div class="hero__top">
+        <a class="logo" href="#inicio">LR</a>
+        <nav class="nav" aria-label="Navegación principal">
           <ul class="nav-links">
-            <li class="nav-link">
-              <a href="#reservar_mesa">reservar mesa</a>
-            </li>
-            <li class="nav-link">
-              <a href="#contactos">contactos</a>
-            </li>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
       </div>
 
-      <div class="header-main">
-        <div class="header-text">
-          <h1 class="header-title">
-            <span class="span-accent">café de especialidad </span>
-            en Triple Peaks
-          </h1>
-
-          <p class="header-description">
-            ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
-            para darte energía y motivar tu creatividad.
+      <div class="hero__content" id="inicio">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Diseñador y desarrollador web</p>
+          <h1 class="hero__title">Creo experiencias digitales claras, rápidas y memorables.</h1>
+          <p class="hero__description">
+            Soy Luis, un profesional enfocado en interfaces modernas, accesibles y con un enfoque visual fuerte para marcas y productos.
           </p>
-
-          <div class="header-hours">
-            <div class="hours-list">
-              <p class="info-text">Horario:</p>
-              <p class="info-text">Lunes a Viernes (de 10:00h a 19:00h)</p>
-              <p class="info-text">Sábados y Domingos (de 11:00h a 18:00h)</p>
-            </div>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#proyectos">Ver proyectos</a>
+            <a class="button button--ghost" href="#perfil">Descargar CV</a>
           </div>
         </div>
 
-        <img
-          class="header-image"
-          src="images/inside_coffee_shop.png"
-          alt="header-image"
-        />
-        <p class="info-text info-address image-address">
-          Avenida del Éxito 200, Ciudad Triple Peaks
-        </p>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__card">
+            <img src="images/profile-portrait.svg" alt="Retrato de Luis Rojas" />
+          </div>
+        </div>
       </div>
     </header>
 
     <main class="content">
-      <div class="reservation" id="reservar_mesa">
-        <h2 class="reservation-title">Reservar una mesa</h2>
-        <form class="reservation-form">
-          <div class="reservation-field">
-            <label for="name" class="reservation-label">Nombre *</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Nombre"
-              class="reservation-input"
-              required
-            />
+      <section class="section section--profile" id="perfil">
+        <div class="section__intro">
+          <p class="section__eyebrow">Perfil</p>
+          <h2 class="section__title">Diseño con intención y desarrollo con detalle.</h2>
+        </div>
+        <div class="profile-grid">
+          <p class="profile-copy">
+            Trabajo en la convergencia entre estrategia visual, UX y código. Mi objetivo es traducir ideas complejas en productos con una experiencia sencilla y atractiva.
+          </p>
+          <div class="profile-highlights">
+            <div class="highlight-card">
+              <strong>+5 años</strong>
+              <span>experiencia en producto digital</span>
+            </div>
+            <div class="highlight-card">
+              <strong>20+</strong>
+              <span>proyectos entregados</span>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="reservation-field">
-            <label for="number_of_people" class="reservation-label"
-              >Número de comensales *</label
-            >
-            <input
-              type="number"
-              id="number_of_people"
-              name="number_of_people"
-              placeholder="1-8"
-              class="reservation-input"
-              required
-            />
-          </div>
+      <section class="section section--projects" id="proyectos">
+        <div class="section__intro">
+          <p class="section__eyebrow">Proyectos</p>
+          <h2 class="section__title">Algunos trabajos recientes.</h2>
+        </div>
 
-          <div class="reservation-field">
-            <label for="date" class="reservation-label">Fecha y hora *</label>
-            <input
-              type="datetime-local"
-              id="date"
-              name="date"
-              class="reservation-input"
-              required
-            />
-          </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-card__media">
+              <img src="images/project-1.svg" alt="Proyecto de diseño de interfaz" />
+              <div class="project-card__overlay"></div>
+            </div>
+            <div class="project-card__body">
+              <h3>Landing de marca</h3>
+              <p>Diseño de experiencia para una campaña de lanzamiento con enfoque en conversión.</p>
+            </div>
+          </article>
 
-          <div class="reservation-field">
-            <label for="email" class="reservation-label"
-              >Tu correo electrónico *</label
-            >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="email@email.com"
-              class="reservation-input"
-              required
-            />
-          </div>
+          <article class="project-card">
+            <div class="project-card__media">
+              <img src="images/project-2.svg" alt="Proyecto de producto digital" />
+              <div class="project-card__overlay"></div>
+            </div>
+            <div class="project-card__body">
+              <h3>Panel de producto</h3>
+              <p>Interfaz de administración con jerarquías claras, métricas y navegación intuitiva.</p>
+            </div>
+          </article>
 
-          <button type="submit" class="reservation-button">
-            Reservar una mesa
-          </button>
-
-          <div class="reservation-terms">
-            <label for="terms and conditions" class="reservation-label">
-              <input
-                type="checkbox"
-                id="terms and conditions"
-                name="terms and conditions"
-                class="reservation-checkbox"
-                required
-              />
-              Acepto los términos de uso
-            </label>
-          </div>
-        </form>
-      </div>
+          <article class="project-card">
+            <div class="project-card__media">
+              <img src="images/project-3.svg" alt="Proyecto de branding" />
+              <div class="project-card__overlay"></div>
+            </div>
+            <div class="project-card__body">
+              <h3>Identidad digital</h3>
+              <p>Desarrollo de lenguaje visual para una startup con estética moderna y premium.</p>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-      <img
-        class="footer-logo"
-        src="images/logo_coffeeshop_light.svg"
-        alt="logo"
-      />
 
-      <p class="footer-text footer-copy">© 2026 Tu nombre</p>
-
-      <div class="footer-content">
-        <p class="footer-text">Redes sociales</p>
-        <div class="social-media-icons" id="contactos">
-          <ul class="footer-social-list">
-            <li>
-              <a href="#" class="social-media-link">
-                <img
-                  src="images/facebook_white.svg"
-                  alt="Facebook"
-                  color="#F2F2F2"
-                />
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a href="#" class="social-media-link">
-                <img
-                  src="images/instagram_white.svg"
-                  alt="Instagram"
-                  color="#F2F2F2"
-                />
-                Instagram
-              </a>
-            </li>
-          </ul>
+    <footer class="footer" id="contacto">
+      <div class="footer__content">
+        <p class="footer__eyebrow">Contacto</p>
+        <h2 class="footer__title">Hablemos de tu próximo proyecto.</h2>
+        <a class="footer__link" href="mailto:hola@luisrojas.dev">hola@luisrojas.dev</a>
+      </div>
+      <div class="footer__meta">
+        <p>Disponible para freelance y proyectos a largo plazo.</p>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
-
-      <div class="circulo" aria-hidden="true"></div>
     </footer>
   </body>
 </html>
