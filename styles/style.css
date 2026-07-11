@@ -153,6 +153,12 @@ a {
   margin: 0 auto;
 }
 
+.hero__visual {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .hero__eyebrow,
 .section__eyebrow,
 .footer__eyebrow {
@@ -219,11 +225,13 @@ a {
 
 .hero__card {
   position: relative;
+  width: min(100%, 420px);
   padding: 16px;
   border-radius: 36px;
   background: rgba(255, 255, 255, 0.8);
   box-shadow: var(--shadow);
   backdrop-filter: blur(12px);
+  margin: 0 auto;
 }
 
 .hero__card img {
@@ -404,8 +412,13 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .hero__content {
+    justify-items: center;
+  }
+
   .hero__visual {
     max-width: 420px;
+    justify-self: center;
   }
 
   .projects-grid {
@@ -445,6 +458,10 @@ a {
   .hero__actions {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .hero__visual {
+    max-width: 100%;
   }
 
   .hero__card {
