@@ -65,6 +65,15 @@ body {
   background: var(--surface);
 }
 
+.hero__text,
+.hero__visual,
+.hero__card,
+.profile-copy,
+.footer__content,
+.footer__meta {
+  min-width: 0;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -447,6 +456,22 @@ a {
     flex-wrap: wrap;
   }
 
+  .hero__title,
+  .section__title,
+  .footer__title {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .hero__description,
+  .profile-copy,
+  .project-card__body p,
+  .footer__meta p,
+  .footer__socials a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
   .hero__title {
     font-size: 2.1rem;
   }
@@ -482,6 +507,47 @@ a {
   }
 
   .footer {
+    flex-direction: column;
+    align-items: stretch;
     padding: 32px 16px 40px;
+  }
+
+  .footer__socials {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__top {
+    align-items: stretch;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px 14px;
+  }
+
+  .nav-links li {
+    flex: 1 1 auto;
+  }
+
+  .nav-links a {
+    display: inline-block;
+  }
+
+  .hero__title {
+    font-size: 1.8rem;
+  }
+
+  .hero__eyebrow,
+  .section__eyebrow,
+  .footer__eyebrow {
+    font-size: 0.72rem;
+  }
+
+  .button {
+    width: 100%;
   }
 }
